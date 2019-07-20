@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Mishka</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="./build/css/mainCatalog.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
+					integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="
+					crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="conteiner conteiner_catalog">
+	
+	<section class="top-menu">
+		<a class="top-menu__logo" href="./index.html" target="_blank">
+		</a>
+		<a class="top-menu__button" href="#">
+			<img width="21" height="21" src="./static/images/mobile/svg/top-menu/menu.svg" alt="menu">
+		</a>
+	</section>
+	<section class="modal-menu visual-hidden hidden">
+				<a class="modal-menu__part" href="#">
+					<p>Каталог товаров</p>
+				</a>
+				<a class="modal-menu__part" href="./form.html" target="_blank">
+					<p>Вязание на заказ</p>
+				</a>
+			<a class="modal-menu__part" href="#">
+				<img src="./static/images/mobile/svg/mobile-menu/search.svg" alt="search">
+				<p>Поиск по сайту</p>
+			</a>
+			<a class="modal-menu__part" href="#">
+				<img src="./static/images/mobile/svg/mobile-menu/cart.svg" alt="search">
+				<p>Корзина: пока пуста</p>
+			</a>
+	</section>
+	<section class="header">
+		<div class="header__top">
+			<div class="header__top-part">
+				<a href="#">Новые поступления</a>
+				<a href="#">Распродажа</a>
+			</div>
+			<p>Бесплатная доставка по России</p>
+		</div>
+		<div class="header__text">Каталог товаров</div>
+	</section>
+	<section class="items">
+		<div class="items__part">
+			<picture class="items__image">
+				<source srcset="./static/images/desktop/img/catalog_items/photo-1-desktop.jpg" media="(min-width: 1250px)">
+				<source srcset="./static/images/tablet/img/catalog_items/photo-1-tablet.jpg" media="(min-width: 768px)">
+				<img src="./static/images/mobile/img/catalog_items/photo-1-mobile.jpg" alt="">
+			</picture>
+			<div class="items__content">
+				<p class="items__large-text">Зайчик-попрыгайчик</p>
+				<p class="items__small-text">Рост 30 см, вес 200 г</p>
+				<p class="items__price">1200 руб.</p>
+			</div>
+		</div>
+		<div class="items__part">
+			<picture class="items__image">
+				<source srcset="./static/images/desktop/img/catalog_items/photo-2-desktop.jpg" media="(min-width: 1250px)">
+				<source srcset="./static/images/tablet/img/catalog_items/photo-2-tablet.jpg" media="(min-width: 768px)">
+				<img src="./static/images/mobile/img/catalog_items/photo-2-mobile.jpg" alt="">
+			</picture>
+			<div class="items__content">
+				<p class="items__large-text">Корзинка для белья</p>
+				<p class="items__small-text">Диаметр 15 см, высота 10 см</p>
+				<p class="items__price">690 руб.</p>
+			</div>
+		</div>
+		<div class="items__part">
+			<picture class="items__image" >
+				<source srcset="./static/images/desktop/img/catalog_items/photo-3-desktop.jpg" media="(min-width: 1250px)">
+				<source srcset="./static/images/tablet/img/catalog_items/photo-3-tablet.jpg" media="(min-width: 768px)">
+				<img src="./static/images/mobile/img/catalog_items/photo-3-mobile.jpg" alt="">
+			</picture>
+			<div class="items__content">
+				<p class="items__large-text">Большая корзинка для игрушек</p>
+				<p class="items__small-text">Рост 30 см, высота 30 см</p>
+				<p class="items__price">1500 руб.</p>
+			</div>
+		</div>
+	</section>
+	<section class="video">
+		<p class="video__large-text">Процесс производства</p>
+		<picture class="video__image">
+				<source srcset="./static/images/desktop/img/catalog_video/video-desktop.jpg" media="(min-width: 1250px)">
+				<source srcset="./static/images/tablet/img/catalog_video/video-tablet.jpg" media="(min-width: 768px)">
+				<img src="./static/images/mobile/img/catalog_video/video-mobile.jpg" alt="">
+			</picture>
+		<p class="video__small-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+		<button class="video__button">СДЕЛАТЬ ЗАКАЗ</button>
+	</section>
+	<footer class="footer">
+		<div class="footer__logo"></div>
+		<div class="footer__parts">
+			<img height="21" width="22" src="./static/images/mobile/svg/footer/insta.svg" alt="instagram">
+			<img height="28" width="15" src="./static/images/mobile/svg/footer/fb.svg" alt="facebook">
+			<img height="20" width="23" src="./static/images/mobile/svg/footer/twitter.svg" alt="twitter">
+		</div>
+		<div class="footer__dev">
+			<h4>Разработано</h4>
+			<img height="34" width="27" src="./static/images/mobile/svg/footer/htmlacademy.svg" alt="">
+		</div>
+	</footer>
+	<section class="mobile-modal">
+		<div class="mobile-modal__fade"></div>
+		<div class="mobile-modal__body">
+			<h2 class="mobile-modal__large-text">ДОБАВИТЬ В КОРЗИНУ</h2>
+			<p class="mobile-modal__small-text">Выберите размер:</p>
+			<div class="mobile-modal__size">
+				<button>S</button>
+				<button>M</button>
+				<button>L</button>
+			</div>
+			<button class="mobile-modal__button">ДОБАВИТЬ</button>
+		</div>
+	</section>
+
+</div>
+	<script src="./build/js/main.min.js"></script>
+</body>
+</html>
