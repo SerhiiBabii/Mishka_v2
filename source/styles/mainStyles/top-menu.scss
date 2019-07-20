@@ -1,0 +1,36 @@
+@import "../variables";
+
+.top-menu {
+  min-height: 80px;
+  width: 320px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+
+  &__logo {
+    height: 35px;
+    width: 86px;
+    margin-right: 67px;
+    background: url(../../static/images/mobile/svg/top-menu/mishka-logo-mobile.svg)
+      no-repeat;
+    &:hover {
+      background: url(../../static/images/mobile/svg/top-menu/mishka-logo-mobile_hover.svg)
+        no-repeat;
+    }
+    &:active {
+      background: url(../../static/images/mobile/svg/top-menu/mishka-logo-mobile_active.svg)
+        no-repeat;
+    }
+  }
+
+  &__button {
+    margin-right: 1px;
+    margin-top: 2px;
+  }
+}

@@ -1,0 +1,33 @@
+@import "../variables";
+
+body {
+  background-color: pink;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.visual-hidden {
+  display: none !important;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.white-toning {
+  color: #ffffff;
+  opacity: 0.9;
+  z-index: 5;
+}
+
+.conteiner {
+  width: $width-mobile;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
