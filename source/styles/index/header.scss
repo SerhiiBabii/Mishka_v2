@@ -2,7 +2,6 @@
 
 .header {
   height: 490px;
-  // width: 320px;
   width: 320px;
   background-color: #ffffff;
   margin-left: auto;
@@ -10,10 +9,29 @@
   position: relative;
   box-sizing: border-box;
   background-image: url(../../static/images/mobile/img/header/hero-mobile.jpg);
+  @media (min-width: $width-tablet) {
+    height: 746px;
+    width: 768px;
+    background-image: url(../../source/images/tablet/img/header/hero-desktop.jpg);
+  }
 
   &__part {
     position: relative;
     top: 283px;
+    @media (min-width: $width-tablet) {
+      top: 627px;
+    }
+    
+    &:after{
+      @media (min-width: $width-tablet) {
+        content: '';
+        position: absolute;
+        height: 24px;
+        width: 768px;
+        bottom: 0;
+        background-image: url(../../source/images/tablet/svg/header/zigzag-fill-desktop.svg);
+      }
+    }
   }
 
   &__large-text {
@@ -29,10 +47,40 @@
     line-height: 30px;
     text-align: center;
     letter-spacing: 2px;
+    @media (min-width: $width-tablet) {
+      font-size: 43px;
+      line-height: 50px;
+      width: 550px;
+      top: 116px;
+      left: 240px;
+      letter-spacing: 2.5px;
+    }
   }
 
   &__top {
     display: none;
+    @media (min-width: $width-tablet) {
+      position: absolute;
+      display: flex;
+      font-family: $font-family;
+      font-size: 15px;
+      top: 20px;
+      right: 50px;
+    }
+    
+    & a{
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+      margin-right: 33px;
+      letter-spacing: 0.9px;
+    }
+
+    &-part{
+      @media (min-width: $width-tablet) {
+        display: none;
+      }
+    }
   }
 
   &__button {
@@ -42,6 +90,15 @@
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
+    @media (min-width: $width-tablet) {
+      height: 130px;
+      box-sizing: border-box;
+      align-items: flex-start;
+      padding-top: 28px;
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+
     &:hover {
       cursor: pointer;
     }
@@ -49,10 +106,19 @@
 
   &__button:first-child {
     background-color: #63d1bb;
+    @media (min-width: $width-tablet) {
+      // width: 262px;
+      width: 334px;
+      float: left;
+      margin-left: 50px;
+    }
   }
 
   &__button:nth-child(2) {
     background-color: #56c3b2;
+    @media (min-width: $width-tablet) {
+      margin-right: 50px;
+    }
   }
 
   &__small-text {
@@ -64,5 +130,9 @@
     font-weight: bold;
     line-height: 24px;
     letter-spacing: 1px;
+    @media (min-width: $width-tablet) {
+      line-height: 29px;
+      letter-spacing: 1.4px;
+    }
   }
 }

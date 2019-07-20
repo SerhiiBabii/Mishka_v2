@@ -9,9 +9,25 @@
   padding-left: 30px;
   padding-right: 30px;
   box-sizing: border-box;
+  @media (min-width: $width-tablet) {
+    height: 143px;
+    width: 768px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 8px;
+  }
 
   &__logo {
     display: none;
+    @media (min-width: $width-tablet) {
+      height: 34px;
+      width: 102px;
+      display: inline-block;
+      background-image: url(../../source/images/tablet/svg/footer/logo-footer.svg);
+      margin-right: 159px;
+    }
   }
 
   &__parts {
@@ -34,6 +50,18 @@
       height: 1px;
       left: -69px;
       background: #e5e5e5;
+      @media (min-width: $width-tablet) {
+        background: transparent;
+      }
+    }
+
+    @media (min-width: $width-tablet) {
+      width: 141px;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 31px;
+      margin-left: 0;
+      margin-right: 84px;
     }
   }
 
@@ -49,11 +77,28 @@
     color: #000000;
     margin-left: auto;
     margin-right: auto;
+    @media (min-width: $width-tablet) {
+      width: 186px;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 8px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    
+    & img {
+      @media (min-width: $width-tablet) {
+        padding-top: 6px;
+      }
+    }
   }
 
   & h4 {
     letter-spacing: 0.8px;
     margin-top: 0;
     margin-bottom: 0;
+    @media (min-width: $width-tablet) {
+      letter-spacing: 1.2px;
+    }
   }
 }

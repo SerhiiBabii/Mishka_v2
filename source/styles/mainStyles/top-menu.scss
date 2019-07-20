@@ -12,6 +12,11 @@
   padding-left: 30px;
   padding-right: 30px;
   box-sizing: border-box;
+  @media (min-width: $width-tablet) {
+    float:left;
+    min-height: 89px;
+    width: 369px;
+  }
 
   &__logo {
     height: 35px;
@@ -19,18 +24,36 @@
     margin-right: 67px;
     background: url(../../static/images/mobile/svg/top-menu/mishka-logo-mobile.svg)
       no-repeat;
+    @media (min-width: $width-tablet) {
+      margin-left: 18px;
+      margin-right: auto;
+      height: 46px;
+      width: 113px;
+      background: url(../../source/images/tablet/svg/top-menu/mishka-logo-tablet.svg) no-repeat;
+    }
+
     &:hover {
       background: url(../../static/images/mobile/svg/top-menu/mishka-logo-mobile_hover.svg)
         no-repeat;
+      @media (min-width: $width-tablet) {
+        background: url(../../source/images/tablet/svg/top-menu/mishka-logo-tablet_hover.svg) no-repeat;
+      }
     }
+
     &:active {
       background: url(../../static/images/mobile/svg/top-menu/mishka-logo-mobile_active.svg)
         no-repeat;
+      @media (min-width: $width-tablet) {
+        background: url(../../source/images/tablet/svg/top-menu/mishka-logo-tablet_active.svg) no-repeat;
+      }
     }
   }
 
   &__button {
     margin-right: 1px;
     margin-top: 2px;
+    @media (min-width: $width-tablet) {
+      display: none;
+    }
   }
 }

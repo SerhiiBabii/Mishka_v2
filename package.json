@@ -1,0 +1,31 @@
+{
+	"name": "mishka_v2",
+	"version": "1.0.0",
+	"description": "",
+	"main": "gulpfile.js",
+	"dependencies": {},
+	"devDependencies": {
+		"@babel/core": "^7.4.4",
+		"@babel/preset-env": "^7.4.4",
+		"browser-sync": "^2.26.7",
+		"gulp": "^4.0.0",
+		"gulp-autoprefixer": "^6.0.0",
+		"gulp-babel": "^8.0.0",
+		"gulp-clean": "^0.4.0",
+		"gulp-clean-css": "^3.10.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-rename": "^1.4.0",
+		"gulp-sass": "^4.0.2",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-uglify": "^3.0.2",
+		"gulp-uglify-es": "^1.0.4",
+		"gulp.spritesmith": "^6.10.1",
+		"rimraf": "^2.6.3"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Serhii Babii",
+	"license": "ISC"
+}

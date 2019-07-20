@@ -14,10 +14,16 @@ p {
 
 .visual-hidden {
   display: none !important;
+  @media (min-width: $width-tablet) {
+    display: flex !important;
+  }
 }
 
 .hidden {
   opacity: 0;
+  @media (min-width: $width-tablet) {
+    opacity: 1;
+  }
 }
 
 .white-toning {
@@ -30,4 +36,10 @@ p {
   width: $width-mobile;
   margin: 0 auto;
   background-color: #ffffff;
+  @media (min-width: $width-tablet) {
+    width: $width-tablet;
+  }
+  @media (min-width: $width-desktop) {
+    width: $width-desktop;
+  }
 }

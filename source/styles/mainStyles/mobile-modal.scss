@@ -27,6 +27,11 @@
     box-shadow: 0px 5px 10px 0px rgba(0, 1, 1, 0.25);
     box-sizing: border-box;
     z-index: 10;
+    @media (min-width: $width-tablet) {
+      height: 336px;
+      width: 566px;
+      transform: translateX(-283px);
+    }
   }
 
   &__large-text {
@@ -38,6 +43,10 @@
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 27px;
+    @media (min-width: $width-tablet) {
+      font-size: 30px;
+      width: 360px;
+    }
   }
 
   &__small-text {
@@ -45,6 +54,9 @@
     color: #444444;
     font-size: 15px;
     margin-bottom: 32px;
+    @media (min-width: $width-tablet) {
+      font-size: 17px;
+    }
   }
 
   &__size {
@@ -58,6 +70,9 @@
       background-color: transparent;
       border: 2px solid #ececec;
       margin-bottom: 31px;
+      @media (min-width: $width-tablet) {
+        width: 112px;
+      }
 
       &:hover {
         border: 2px solid #63d1bb;
@@ -81,6 +96,9 @@
     background-color: #63d1bb;
     letter-spacing: 1px;
     border: none;
+    @media (min-width: $width-tablet) {
+      width: 350px;
+    }
 
     &:hover {
       cursor: pointer;

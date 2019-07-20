@@ -10,6 +10,26 @@
   padding-top: 31px;
   box-sizing: border-box;
   background-color: #ffffff;
+  @media (min-width: $width-tablet) {
+		position: relative;
+		width: 768px;
+		height: 909px;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-top: 43px;
+  }
+
+  &::after{
+		@media (min-width: $width-tablet) {
+			content: '';
+			height: 81px;
+			width: 47px;
+			position: absolute;
+			top: 28px;
+			right: 53px;
+			background-image: url(../../source/images/tablet/svg/contact/flag.svg);
+		}
+	}
 
   & h3 {
     font-family: $font-family;
@@ -20,6 +40,12 @@
     letter-spacing: 1px;
     margin-bottom: 23px;
     margin-top: 0;
+    @media (min-width: $width-tablet) {
+			font-size: 43px;
+			line-height: 50px;
+			letter-spacing: 2px;
+			margin-bottom: 48px;
+		}
   }
 
   &__info {
@@ -29,6 +55,9 @@
     line-height: 30px;
     color: #444444;
     margin-bottom: 34px;
+    @media (min-width: $width-tablet) {
+			display: flex;
+		}
   }
 
   &__part {
@@ -37,12 +66,28 @@
     &:first-child {
       padding-top: 4px;
       margin-bottom: 30px;
+      @media (min-width: $width-tablet) {
+				padding-top: 0;
+			}
     }
 
     & p:first-child {
       width: 82px;
+      @media (min-width: $width-tablet) {
+				width: 79px;
+			}
     }
+    @media (min-width: $width-tablet) {
+			width: 334px;
+			letter-spacing: 0.8px;
+		}
   }
+
+  &__wraper{
+		@media (min-width: $width-tablet) {
+			margin-bottom: 57px;
+		}
+	}
 
   tr:nth-child(1) {
     height: 58px;
@@ -70,6 +115,12 @@
     width: 320px;
     margin-left: -27px;
     margin-bottom: 32px;
+    @media (min-width: $width-tablet) {
+			height: 458px;
+			width: 768px;
+			margin-left: -50px;
+			margin-bottom: 50px;
+		}
   }
 
   &__button {
@@ -84,5 +135,12 @@
     border: 2px solid #444444;
     cursor: pointer;
     margin-left: 3px;
+    @media (min-width: $width-tablet) {
+			display: inline-block;
+			width: 230px;
+			margin-left: 219px;
+			font-size: 17px;
+			letter-spacing: 1px;
+		}
   }
 }
