@@ -20,6 +20,15 @@
     background-position-y: 590px;
     background-repeat: no-repeat;
   }
+  @media (min-width: $width-desktop) {
+    width: 1250px;
+    height: 1180px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-position-x: 100px;
+    background-position-y: 602px;
+    background-repeat: no-repeat;
+  }
 
   &__large-text {
     font-family: $font-family;
@@ -36,6 +45,11 @@
       font-weight: 800;
       margin-bottom: 48px;
     }
+    @media (min-width: $width-desktop) {
+      font-size: 53px;
+      line-height: 57px;
+      margin-left: 175px;
+    }
   }
 
   &__wraper{
@@ -44,12 +58,19 @@
       justify-content: space-between;
       margin-bottom: 129px;
     }
+    @media (min-width: $width-desktop) {
+      margin-left: 175px;
+      margin-right: 175px;
+    }
   }
   
   &__parts{
     @media (min-width: $width-tablet) {
       height: 440px;
       width: 334px;
+    }
+    @media (min-width: $width-desktop) {
+      width: 350px;
     }
   }
 
@@ -156,6 +177,10 @@
       position: relative;
       margin-bottom: 28px;
     }
+    @media (min-width: $width-desktop) {
+      margin-left: 175px;
+      margin-bottom: 87px;
+    }
   }
 
   &__feedback-wraper{
@@ -179,6 +204,10 @@
       font-size: 43px;
       line-height: 50px;
       margin-bottom: 48px;
+    }
+    @media (min-width: $width-desktop) {
+      font-size: 53px;
+      line-height: 57px;
     }
   }
 
@@ -205,6 +234,9 @@
     @media (min-width: $width-tablet) {
       letter-spacing: 1px;
       margin-bottom: 33px;
+    }
+    @media (min-width: $width-desktop) {
+      margin-bottom: 13px;
     }
   }
 
@@ -252,6 +284,10 @@
       right: -493px;
       width: 175px;
     }
+    @media (min-width: $width-desktop) {
+      top: -306px;
+      right: -700px;
+    }
   }
 
   &__wavy-line {
@@ -264,6 +300,12 @@
       width: 768px;
       margin-left: -50px;
       background-image: url(../../source/images/tablet/svg/featured/zigzag-line-desktop.svg);
+    }
+    @media (min-width: $width-desktop) {
+      height: 23px;
+      width: 1052px;
+      margin-left: 0;
+      background-image: url(../../source/images/desktop/svg/featured/zigzag-line-desktop.svg);
     }
   }
 }

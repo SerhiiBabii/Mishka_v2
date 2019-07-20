@@ -19,6 +19,9 @@
     transition: none;
     flex-direction: row;
   }
+  @media (min-width: $width-desktop) {
+    width: 451px;
+  }
 
   &__part {
     position: relative;
@@ -52,6 +55,11 @@
         padding: 0;
         z-index: 5;
       }
+      @media (min-width: $width-desktop) {
+        top: 3px;
+        left: -699px;
+        letter-spacing: 1px;
+      }
     }
 
     &:nth-child(2) {
@@ -64,6 +72,14 @@
         border: none;
         padding: 0;
         z-index: 5;
+      }
+      @media (min-width: $width-desktop) {
+        top: 3px;
+        left: -515px;
+        width: 194px;
+        letter-spacing: 1px;
+        border-left: 1px solid #ececec;
+        padding-left: 34px;
       }
     }
 

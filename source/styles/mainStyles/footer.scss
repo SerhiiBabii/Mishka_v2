@@ -18,6 +18,12 @@
     padding-right: 50px;
     padding-bottom: 8px;
   }
+  @media (min-width: $width-desktop) {
+    width: 1250px;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 
   &__logo {
     display: none;
