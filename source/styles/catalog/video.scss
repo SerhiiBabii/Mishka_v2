@@ -20,6 +20,18 @@
     margin-left: 50px;
     margin-right: 50px;
   }
+  @media (min-width: $width-desktop) {
+    height: 455px;
+    width: 1050px;
+    grid-template-areas: "i	."
+                         "i	lt"
+                         "i	st"
+                         "i	b";
+    grid-template-rows: 71px 79px 192px 130px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 105px;
+  }
 
   &__large-text {
     position: relative;
@@ -42,6 +54,9 @@
       font-size: 20px;
       letter-spacing: 1px;
     }
+    @media (min-width: $width-desktop) {
+      width: 360px;
+    }
     
     &::before {
       position: relative;
@@ -50,6 +65,10 @@
       left: -24px;
       @media (min-width: $width-tablet) {
         left: -30px;
+      }
+      @media (min-width: $width-desktop) {
+        left: 36px; 
+        top: -59px;
       }
     }
   }
@@ -73,6 +92,9 @@
         top: 188px;
         left: 283px;
       }
+      @media (min-width: $width-desktop) {
+        left: 290px;
+      }
     }
   }
 
@@ -94,6 +116,10 @@
       padding-left: 40px;
       padding-right: 80px;
     }
+    @media (min-width: $width-desktop) {
+      width: 466px;
+      padding-left: 91px;
+    }
   }
 
   &__button {
@@ -113,6 +139,11 @@
       width: 584px;
       grid-area: b;
       margin-left: 41px;
+    }
+    @media (min-width: $width-desktop) {
+      width: 230px;
+      letter-spacing: 1px;
+      margin-left: 93px;
     }
   }
 }

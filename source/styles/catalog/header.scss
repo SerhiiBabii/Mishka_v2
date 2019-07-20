@@ -15,6 +15,11 @@
     width: 768px;
     margin-bottom: 66px;
   }
+  @media (min-width: $width-desktop) {
+    height: 261px;
+    width: 1250px;
+    margin-bottom: 121px;
+  }
   
   &::after{
     @media (min-width: $width-tablet) {
@@ -24,6 +29,9 @@
       width: 770px;
       bottom: 0;
       left: 0;
+    }
+    @media (min-width: $width-desktop) {
+      content: url(../../source/images/desktop/svg/catalog_header/zigzag-fill-desktop.svg);
     }
   }
 
@@ -37,6 +45,14 @@
       top: 20px;
       right: 50px;
     }
+    @media (min-width: $width-desktop) {
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 1050px;
+      height: 160px;
+      left: 100px;
+      top: -120px;
+    }
     
     & a{
       text-decoration: none;
@@ -44,11 +60,27 @@
       font-weight: bold;
       margin-right: 33px;
       letter-spacing: 0.9px;
+      @media (min-width: $width-desktop) {
+        margin: 0;
+      }
+    }
+
+    &-parts{
+      @media (min-width: $width-desktop) {
+        display: flex;
+        width: 380px;
+      }
     }
 
     &-part{
       @media (min-width: $width-tablet) {
         display: none;
+      }
+      @media (min-width: $width-desktop) {
+        width: 317px;
+        display: flex;
+        margin-right: 0;
+        justify-content: space-between;
       }
     }
   }
@@ -61,6 +93,11 @@
     @media (min-width: $width-tablet) {
       font-size: 43px;
       line-height: 50px;
+      letter-spacing: 2px;
+    }
+    @media (min-width: $width-desktop) {
+      font-size: 53px;
+      line-height: 57px;
       letter-spacing: 2px;
     }
   }
