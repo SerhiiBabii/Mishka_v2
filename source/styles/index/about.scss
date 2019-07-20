@@ -1,0 +1,163 @@
+@import "../variables";
+
+.about {
+  height: 1460px;
+  width: 320px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+
+  &__large-text {
+    font-family: $font-family;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #000000;
+    letter-spacing: 0.7px;
+    margin-bottom: 32px;
+    margin-top: 0;
+  }
+
+  &__part {
+    width: 260px;
+    height: 126px;
+  }
+
+  &__part h3 {
+    font-family: $font-family;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #000000;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__part:nth-child(1) img {
+    margin-left: 9px;
+    margin-bottom: 13px;
+  }
+
+  &__part:nth-child(2) img {
+    margin-bottom: 20px;
+  }
+
+  &__part:nth-child(3) img {
+    margin-left: 7px;
+    margin-bottom: 16px;
+  }
+
+  &__part:nth-child(4) img {
+    margin-bottom: 13px;
+    margin-top: 4px;
+    margin-left: 4px;
+  }
+
+  &__part:nth-child(5) img {
+    margin-top: -8px;
+    margin-left: -5px;
+    margin-bottom: 23px;
+  }
+
+  &__part:nth-child(6) img {
+    margin-top: -13px;
+    margin-left: 3px;
+    margin-bottom: 16px;
+  }
+
+  &__parts:nth-child(2) {
+    & :nth-child(1) img {
+      margin-bottom: 13px;
+      margin-top: -7px;
+      margin-left: 4px;
+    }
+
+    & :nth-child(2) img {
+      margin-top: -8px;
+      margin-left: -5px;
+      margin-bottom: 23px;
+    }
+
+    & :nth-child(3) img {
+      margin-top: -13px;
+      margin-left: 3px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__feedback {
+    margin-bottom: 45px;
+  }
+
+  &__feedback h3 {
+    font-family: $font-family;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #000000;
+    letter-spacing: 1.7px;
+    margin-top: 8px;
+    margin-bottom: 25px;
+  }
+
+  &__feedback h4 {
+    font-family: $font-family;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #000000;
+    letter-spacing: 1px;
+    margin-top: 26px;
+    margin-bottom: 3px;
+  }
+
+  &__feedback p {
+    font-family: $font-family;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #444444;
+  }
+
+  &__feedback p:nth-child(4) {
+    font-size: 17px;
+  }
+
+  &__arrows {
+    width: 260px;
+    display: flex;
+    align-content: space-between;
+    margin-top: 29px;
+    margin-bottom: 38px;
+
+    & img {
+      width: 130px;
+      border: solid #ececec 1px;
+      padding: 12px 31px 12px 27px;
+    }
+  }
+
+  &__feedback button {
+    font-family: $font-family;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #444444;
+    height: 52px;
+    width: 261px;
+    background-color: #ffffff;
+    border: 2px solid #444444;
+    cursor: pointer;
+  }
+
+  &__wavy-line {
+    height: 8px;
+    width: 320px;
+    margin-left: -30px;
+    background-image: url(../../static/images/mobile/svg/featured/zigzag-line-desktop.svg);
+  }
+}
