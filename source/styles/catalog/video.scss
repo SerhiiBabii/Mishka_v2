@@ -8,6 +8,18 @@
   margin-bottom: 55px;
   border: 1px solid #ececec;
   box-sizing: border-box;
+  @media (min-width: $width-tablet) {
+    height: 750px;
+    width: 668px;
+    display: grid;
+    grid-template-areas: "i"
+                         "lt"	
+                         "st"
+                         "b";
+    grid-template-rows: 456px 94px 93px 130px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 
   &__large-text {
     position: relative;
@@ -24,11 +36,21 @@
     box-sizing: border-box;
     padding-left: 57px;
     padding-right: 30px;
+    @media (min-width: $width-tablet) {
+      width: 390px;
+      grid-area: lt;
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+    
     &::before {
       position: relative;
       content: url(../../static/images/mobile/svg/catalog_video/video.svg);
       top: 0px;
       left: -24px;
+      @media (min-width: $width-tablet) {
+        left: -30px;
+      }
     }
   }
 
@@ -36,12 +58,21 @@
     position: relative;
     height: 150px;
     width: 260px;
+    @media (min-width: $width-tablet) {
+      grid-area: i;
+      height: 445px;
+      width: 668px;
+    }
 
     &::before {
       position: absolute;
       content: url(../../static/images/mobile/svg/catalog_video/play.svg);
       top: -98px;
       left: 79px;
+      @media (min-width: $width-tablet) {
+        top: 188px;
+        left: 283px;
+      }
     }
   }
 
@@ -55,6 +86,14 @@
     padding-right: 30px;
     margin-bottom: 25px;
     margin-top: 26px;
+    @media (min-width: $width-tablet) {
+      width: 710px;
+      font-size: 15px;
+      line-height: 30px;
+      grid-area: st;
+      padding-left: 40px;
+      padding-right: 80px;
+    }
   }
 
   &__button {
@@ -70,5 +109,10 @@
     padding: 0;
     margin-left: 34px;
     margin-right: 34px;
+    @media (min-width: $width-tablet) {
+      width: 584px;
+      grid-area: b;
+      margin-left: 41px;
+    }
   }
 }
