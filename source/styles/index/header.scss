@@ -12,12 +12,12 @@
   @media (min-width: $width-tablet) {
     height: 746px;
     width: 768px;
-    background-image: url(../../source/images/tablet/img/header/hero-desktop.jpg);
+    background-image: url(../../static/images/tablet/img/header/hero-desktop.jpg);
   }
   @media (min-width: $width-desktop) {
     height: 746px;
     width: 1250px;
-    background-image: url(../../source/images/desktop/img/header/hero-desktop.jpg);
+    background-image: url(../../static/images/desktop/img/header/hero-desktop.jpg);
     background-position-x: 51px;
   }
 
@@ -39,14 +39,14 @@
         height: 24px;
         width: 768px;
         bottom: 0;
-        background-image: url(../../source/images/tablet/svg/header/zigzag-fill-desktop.svg);
+        background-image: url(../../static/images/tablet/svg/header/zigzag-fill-desktop.svg);
       }
       @media (min-width: $width-desktop) {
         position: absolute;
         height: 34px;
         width: 1250px;
         bottom: 0;
-        background-image: url(../../source/images/desktop/svg/header/zigzag-fill-desktop.svg);
+        background-image: url(../../static/images/desktop/svg/header/zigzag-fill-desktop.svg);
         left: -100px;
       }
     }

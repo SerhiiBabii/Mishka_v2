@@ -23,7 +23,7 @@
   
   &::after{
     @media (min-width: $width-tablet) {
-      content: url(../../source/images/tablet/svg/catalog_header/zigzag-fill-desktop.svg);
+      content: url(../../static/images/tablet/svg/catalog_header/zigzag-fill-desktop.svg);
       position: absolute;
       height: 24px;
       width: 770px;
@@ -31,7 +31,7 @@
       left: 0;
     }
     @media (min-width: $width-desktop) {
-      content: url(../../source/images/desktop/svg/catalog_header/zigzag-fill-desktop.svg);
+      content: url(../../static/images/desktop/svg/catalog_header/zigzag-fill-desktop.svg);
     }
   }
 
