@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Mishka</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="./build/css/mainForm.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
+					integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="
+					crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="conteiner conteiner_catalog">
+	
+	<section class="top-menu">
+		<a class="top-menu__logo" href="./index.html" target="_blank">
+		</a>
+		<a class="top-menu__button" href="#">
+			<img width="21" height="21" src="./static/images/mobile/svg/top-menu/menu.svg" alt="menu">
+		</a>
+	</section>
+	<section class="modal-menu visual-hidden hidden">
+				<a class="modal-menu__part" href="./catalog.html" target="_blank">
+					<p>Каталог товаров</p>
+				</a>
+				<a class="modal-menu__part" href="#">
+					<p>Вязание на заказ</p>
+				</a>
+			<a class="modal-menu__part" href="#">
+				<img src="./static/images/mobile/svg/mobile-menu/search.svg" alt="search">
+				<p>Поиск по сайту</p>
+			</a>
+			<a class="modal-menu__part" href="#">
+				<img src="./static/images/mobile/svg/mobile-menu/cart.svg" alt="search">
+				<p>Корзина: пока пуста</p>
+			</a>
+	</section>
+	<section class="header">
+		<div class="header__top">
+			<div class="header__top-part">
+				<a href="#">Новые поступления</a>
+				<a href="#">Распродажа</a>
+			</div>
+			<p>Бесплатная доставка по России</p>
+		</div>
+		<div class="header__text">Вязание на заказ</div>
+	</section>
+	<section class="form">
+
+		<div class="form__small-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</div>
+		<div class="form__type">
+			<p class="form__title-text">ТИП</p>
+			<div class="form__type-wraper">
+				<label for="type1" class="form__radio">
+					<input type="radio" name="type" id="type1" checked>
+					<span class="form__type-text">Аксессуар для интерьера</span>
+				</label>
+				<label for="type2" class="form__radio">
+					<input type="radio" name="type" id="type2">
+					<span class="form__type-text">Детская игрушка</span>
+				</label>
+			</div>
+		</div>
+		<div class="form__color">
+			<p class="form__title-text">ЦВЕТ</p>
+			<div class="form__color-wraper">
+				<label for="color1" class="form__cheakbox">
+					<input type="checkbox" id="color1">
+					<span class="form__color-text">Белый</span>
+				</label>
+				<label for="color2" class="form__cheakbox">
+					<input type="checkbox" id="color2">
+					<span class="form__color-text">Серый</span>
+				</label>
+				<label for="color3" class="form__cheakbox">
+					<input type="checkbox" id="color3">
+					<span class="form__color-text">«Тиффани»</span>
+				</label>
+				<label for="color4" class="form__cheakbox">
+					<input type="checkbox" id="color4">
+					<span class="form__color-text">Черный</span>
+				</label>
+				<label for="color5" class="form__cheakbox">
+					<input type="checkbox" id="color5">
+					<span class="form__color-text">Розовый</span>
+				</label>
+				<label for="color6" class="form__cheakbox">
+					<input type="checkbox" id="color6">
+					<span class="form__color-text">Оранжевый</span>
+				</label>
+			</div>
+		</div>
+		<div class="form__name">
+			<p class="form__title-text">ФИО</p>
+			<div class="form__name-wraper">
+				<label for="">
+					<span class="form__name-text">Имя:</span>
+					<input type="text" placeholder="Введите ваше имя*">
+				</label>
+				<label for="">
+					<span class="form__name-text">Фамилия:</span>
+					<input type="text" placeholder="Укажите фамилию*">
+				</label>
+				<label for="">
+					<span class="form__name-text">Отчество:</span>
+					<input type="text" placeholder="Отчество, если желаете">
+				</label>
+			</div>
+		</div>
+		<div class="form__phone">
+			<p class="form__title-text">ТЕЛ</p>
+			<input type="tel" name="" id="" placeholder="+7 XXX XX XX*">
+		</div>
+		<div class="form__email">
+				<p class="form__title-text">E-MAIL</p>
+				<input type="email" name="" id="" placeholder="Ваш Email*">
+		</div>
+		<div class="form__addition">
+			<p class="form__title-text">ДОП</p>
+			<textarea name="" id="" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+		</div>
+		<div class="form__wraper">
+			<p class="form__text">*Поля обязательны для заполнения</p>
+			<button class="form__button">ОТПРАВИТЬ ЗАКАЗ</button>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer__logo"></div>
+		<div class="footer__parts">
+			<img height="21" width="22" src="./static/images/mobile/svg/footer/insta.svg" alt="instagram">
+			<img height="28" width="15" src="./static/images/mobile/svg/footer/fb.svg" alt="facebook">
+			<img height="20" width="23" src="./static/images/mobile/svg/footer/twitter.svg" alt="twitter">
+		</div>
+		<div class="footer__dev">
+			<h4>Разработано</h4>
+			<img height="34" width="27" src="./static/images/mobile/svg/footer/htmlacademy.svg" alt="">
+		</div>
+	</footer>
+	<section class="mobile-modal">
+		<div class="mobile-modal__fade"></div>
+		<div class="mobile-modal__body">
+			<h2 class="mobile-modal__large-text">ДОБАВИТЬ В КОРЗИНУ</h2>
+			<p class="mobile-modal__small-text">Выберите размер:</p>
+			<div class="mobile-modal__size">
+				<button>S</button>
+				<button>M</button>
+				<button>L</button>
+			</div>
+			<button class="mobile-modal__button">ДОБАВИТЬ</button>
+		</div>
+	</section>
+
+</div>
+	<script src="./build/js/main.min.js"></script>
+</body>
+</html>
