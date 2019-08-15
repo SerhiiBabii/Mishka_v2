@@ -11,6 +11,7 @@
   margin-right: auto;
   height: 315px;
   transition: display 1s;
+
   @media (min-width: $width-tablet) {
     position: relative;
     margin-left: 0;
@@ -19,11 +20,25 @@
     transition: none;
     flex-direction: row;
   }
+
   @media (min-width: $width-desktop) {
     width: 451px;
   }
 
-  &__part {
+  & ul {
+    @media (min-width: $width-tablet) {
+      display: flex;
+      position: relative;
+      margin-left: 0;
+      height: 89px;
+      width: 399px;
+      transition: none;
+      flex-direction: row;
+    }
+  }
+
+  & ul &__part {
+  // &__part {
     position: relative;
     height: 77px;
     line-height: 80px;
@@ -35,6 +50,7 @@
     text-decoration: none;
     color: #000000;
     border-bottom: solid #a9bbb1 1px;
+
     @media (min-width: $width-tablet) {
       border: none;
       width: 83px;
@@ -43,8 +59,14 @@
       border-left: 1px solid #ececec;
     }
 
+    & a {
+      text-decoration: none;
+      color: #000000;
+    }
+
     &:first-child {
       border-top: solid #a9bbb1 1px;
+
       @media (min-width: $width-tablet) {
         position: absolute;
         width: 167px;
@@ -55,11 +77,13 @@
         padding: 0;
         z-index: 5;
       }
+      
       @media (min-width: $width-desktop) {
         top: 3px;
         left: -699px;
         letter-spacing: 1px;
       }
+
     }
 
     &:nth-child(2) {
@@ -81,11 +105,40 @@
         border-left: 1px solid #ececec;
         padding-left: 34px;
       }
+
+    }
+
+    &:nth-child(3) {
+      & svg {
+        fill: #d3d2d2;
+      }
+
+      & a:hover svg {
+        fill: #63d1bb;
+      }
+
+      & a:active svg {
+        fill: #d0f1ea;
+      }
     }
 
     &:nth-child(3) p {
       @media (min-width: $width-tablet) {
         display: none;
+      }
+    }
+
+    &:nth-child(4){
+      & a svg {
+        fill: #d3d2d2;
+      }
+
+      & a:hover svg {
+        fill: #63d1bb;
+      }
+
+      & a:active svg {
+        fill: #d0f1ea;
       }
     }
 
@@ -97,7 +150,17 @@
       }
     }
 
-    & img {
+    // & img {
+    //   position: absolute;
+    //   left: 30px;
+    //   top: 31px;
+    //   @media (min-width: $width-tablet) {
+    //     left: 33px;
+    //     top: 37px;
+    //   }
+    // }
+
+    & svg {
       position: absolute;
       left: 30px;
       top: 31px;
@@ -105,6 +168,22 @@
         left: 33px;
         top: 37px;
       }
+
+      // & :hover { 
+      //   fill: #63d1bb;
+      // }
     }
+    
+    & p:hover{
+      color: #707070;
+    }
+
+    & p:active{
+      color: #c7c7c7;
+    }
+
+    // &:hover :first-child() svg {
+    //   fill: #63d1bb;
+    // }
   }
 }
