@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.29" height="18.85" viewBox="0 0 20.29 18.85">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+        stroke: #d0f1ea;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <title>cart</title>
+  <g>
+    <polyline class="a" points="18.82 7.98 15.93 18.1 4.37 18.1 1.47 7.98"/>
+    <line class="a" x1="7.98" y1="0.75" x2="4.36" y2="7.98"/>
+    <line class="a" x1="12.32" y1="0.75" x2="15.93" y2="7.98"/>
+    <line class="a" x1="0.75" y1="7.98" x2="19.54" y2="7.98"/>
+    <line class="a" x1="2.2" y1="12.31" x2="18.1" y2="12.31"/>
+  </g>
+</svg>
