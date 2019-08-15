@@ -23,7 +23,7 @@
     transform: translateX(-160px);
     text-align: center;
     background-color: #ffffff;
-    border: 1px solid red;
+    border: 1px solid #c6c6c6;
     box-shadow: 0px 5px 10px 0px rgba(0, 1, 1, 0.25);
     box-sizing: border-box;
     z-index: 10;
@@ -70,13 +70,17 @@
       background-color: transparent;
       border: 2px solid #ececec;
       margin-bottom: 31px;
+      cursor: pointer;
       @media (min-width: $width-tablet) {
         width: 112px;
       }
 
       &:hover {
-        border: 2px solid #63d1bb;
-        cursor: pointer;
+        border: 2px solid #c7c7c7;
+      }
+      &:active {
+        border: 2px solid #62d1ba;
+
       }
     }
 
