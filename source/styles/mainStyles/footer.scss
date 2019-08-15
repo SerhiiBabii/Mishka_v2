@@ -33,6 +33,18 @@
       display: inline-block;
       background-image: url(../../static/images/tablet/svg/footer/logo-footer.svg);
       margin-right: 159px;
+      cursor: pointer;
+    }
+    &:hover {
+      @media (min-width: $width-tablet) {
+        background: url(../../static/images/tablet/svg/footer/logo-footer_hover.svg);
+      }
+    }
+
+    &:active {
+      @media (min-width: $width-tablet) {
+        background: url(../../static/images/tablet/svg/footer/logo-footer_active.svg);
+      }
     }
   }
 
@@ -71,6 +83,31 @@
     }
   }
 
+  &__part{
+    &--insta{
+      height: 21px;
+      width: 22px;
+    }
+    &--fb{
+      height: 28px;
+      width: 15px;
+    }
+    &--twitter{
+      height: 20px;
+      width: 23px;
+    }
+    &{
+      fill: #231f20;
+      cursor: pointer;
+    }
+    &:hover{
+      fill: #46c1ae;
+    }
+    &:active{
+      fill: #bde3dd;
+    }
+  }
+
   &__dev {
     height: 50px;
     width: 215px;
@@ -83,6 +120,7 @@
     color: #000000;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
     @media (min-width: $width-tablet) {
       width: 186px;
       justify-content: space-between;
@@ -91,11 +129,23 @@
       margin-left: 0;
       margin-right: 0;
     }
-    
-    & img {
+    & svg {
+      height: 34px;
+      width: 27px;
+      fill: #63d1bb;
       @media (min-width: $width-tablet) {
         padding-top: 6px;
       }
+    }
+
+    &:active h4{
+      color: #a8a8a8;
+    }
+    &:hover svg{
+      fill: #46c1ae;
+    }
+    &:active svg{
+      fill: #bde3dd;
     }
   }
 
