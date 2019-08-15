@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: flex-end;
   padding-left: 30px;
-  padding-right: 30px;
+  padding-right: 23px;
   box-sizing: border-box;
   @media (min-width: $width-tablet) {
     float:left;
@@ -24,9 +24,8 @@
   &__logo {
     height: 35px;
     width: 86px;
-    margin-right: 67px;
-    background: url(../../static/images/mobile/svg/top-menu/mishka-logo-mobile.svg)
-      no-repeat;
+    margin-right: 60px;
+    background: url(../../static/images/mobile/svg/top-menu/mishka-logo-mobile.svg) no-repeat;
     @media (min-width: $width-tablet) {
       margin-left: 18px;
       margin-right: auto;
@@ -67,8 +66,14 @@
   &__button {
     margin-right: 1px;
     margin-top: 2px;
+    background-color: transparent;
+    border: none;
     @media (min-width: $width-tablet) {
       display: none;
+    }
+
+    &:hover{
+      cursor: pointer;
     }
   }
 }
