@@ -96,6 +96,54 @@
       }
     }
 
+    & a{
+      text-decoration: none;
+      color: #444444;
+      position: relative;
+
+      &:after{
+        @media (min-width: $width-tablet) {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: #62d1ba;
+          height: 1px;
+          width: 200px;
+        }
+      }
+
+      &:hover:after{
+        @media (min-width: $width-tablet) {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: #46c1ae;
+          height: 1px;
+          width: 200px;
+        }
+      }
+      &:active:after{
+        @media (min-width: $width-tablet) {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: #ecf9f7;
+          height: 1px;
+          width: 200px;
+        }
+      }
+
+      &:hover{
+        color: #46c1ae;
+      }
+      &:active{
+        color: #c7ece7;
+      }
+    }
+
     & p:first-child {
       width: 82px;
       @media (min-width: $width-tablet) {
@@ -179,6 +227,14 @@
     @media (min-width: $width-desktop) {
       grid-area: cb;
       margin-left: 3px;
+    }
+    &:hover{
+      background-color: #444444;
+      color: #ffffff;
+    }
+    &:active{
+      background-color: #444444;
+      color: #7c7c7c;
     }
   }
 }
