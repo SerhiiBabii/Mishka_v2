@@ -41,6 +41,13 @@
     }
 
     &:last-child {
+      height: 400px;
+      @media (min-width: $width-tablet) {
+        height: 375px;
+      }
+      @media (min-width: $width-desktop) {
+        height: 660px;
+      }
       & .items__large-text {
         width: 205px;
       }
